@@ -13,7 +13,8 @@ function App() {
         <>
             <PageTitle title={'This is app component'}/>
             <PageTitle title={'React kabzda kak podrobno'}/>
-            <Accordion/>
+            <Accordion title={'Users'}/>
+            <Accordion title={'React kabzda lessons list'}/>
             <Rating value={3}/>
             <Rating value={2}/>
         </>
