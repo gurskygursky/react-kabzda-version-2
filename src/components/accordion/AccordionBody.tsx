@@ -1,6 +1,9 @@
 import React from 'react';
 
 const AccordionBody = () => {
+
+    console.log('AccordionBody rendering');
+
     return (
         <ul>
             <li>1</li>

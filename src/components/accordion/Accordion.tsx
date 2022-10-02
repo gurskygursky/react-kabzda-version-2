@@ -3,6 +3,9 @@ import AccordionBody from './AccordionBody';
 import AccordionTitle from './AccordionTitle';
 
 const Accordion = () => {
+
+    console.log('Accordion rendering');
+
     return (
         <>
             <AccordionTitle/>

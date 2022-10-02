@@ -1,6 +1,9 @@
 import React from 'react';
 
 const AccordionTitle = () => {
+
+    console.log('AccordionTitle rendering');
+
     return (
         <div>
             Accordion Menu
