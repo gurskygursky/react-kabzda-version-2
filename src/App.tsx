@@ -16,8 +16,8 @@ function App() {
         <>
             <PageTitle title={'This is app component'}/>
             <PageTitle title={'React kabzda kak podrobno'}/>
-            <Accordion title={'Users'}/>
-            <Accordion title={'React kabzda lessons list'}/>
+            <Accordion title={'Users'} collapsed={false}/>
+            <Accordion title={'React kabzda lessons list'} collapsed={true}/>
             <Rating value={3}/>
             <Rating value={2}/>
             <AccordionWithDestructureProps AccordionProps={{title: 'Kabzda destructure props'}}/>
