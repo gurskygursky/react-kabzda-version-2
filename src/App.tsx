@@ -7,6 +7,7 @@ import Accordion, {
 import Rating from './components/rating/Rating';
 import PageTitle from './components/page-title/PageTitle';
 import {OnOff} from './components/on-off/OnOff';
+import { UncontrolledOnOff } from './components/on-off/UncontrolledOnOff';
 
 
 function App() {
@@ -23,8 +24,10 @@ function App() {
             {/*<Rating value={2}/>*/}
             {/*<AccordionWithDestructureProps AccordionProps={{title: 'Kabzda destructure props'}}/>*/}
             {/*<AccordionWithDestructureProps2 title={'Destructure props'}/>*/}
-            <OnOff switch={true}/>
-            <OnOff switch={false}/>
+            {/*<OnOff switch={true}/>*/}
+            {/*<OnOff switch={false}/>*/}
+            <UncontrolledOnOff/>
+            <UncontrolledOnOff/>
         </>
     );
 }
