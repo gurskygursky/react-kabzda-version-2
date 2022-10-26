@@ -7,7 +7,9 @@ import Accordion, {
 import Rating from './components/rating/Rating';
 import PageTitle from './components/page-title/PageTitle';
 import {OnOff} from './components/on-off/OnOff';
-import { UncontrolledOnOff } from './components/on-off/UncontrolledOnOff';
+import {UncontrolledOnOff} from './components/on-off/UncontrolledOnOff';
+import UncontrolledRating from './components/rating/UncontrolledRating';
+import UncontrolledAccordion from './components/accordion/UncontrolledAccordion';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
             {/*<OnOff switch={false}/>*/}
             <UncontrolledOnOff/>
             <UncontrolledOnOff/>
+            <UncontrolledRating/>
+            <UncontrolledAccordion title={'React kabzda lessons list'}/>
         </>
     );
 }
