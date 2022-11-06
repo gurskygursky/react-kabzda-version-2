@@ -1,20 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import Accordion, {
-    AccordionWithDestructureProps,
-    AccordionWithDestructureProps2
-} from './components/accordion/Accordion';
-import Rating from './components/rating/Rating';
-import PageTitle from './components/page-title/PageTitle';
-import {OnOff} from './components/on-off/OnOff';
-import {UncontrolledOnOff} from './components/on-off/UncontrolledOnOff';
-import UncontrolledRating from './components/rating/UncontrolledRating';
-import UncontrolledAccordion from './components/accordion/UncontrolledAccordion';
+import {ControlledAccordion} from 'src/components/accordion/ControlledAccordion';
+import {ControlledOnOff} from './components/on-off/ControlledOnOff';
+import {ControlledRating, RatingValueType} from './components/rating/ControlledRating';
 
 
 function App() {
 
     console.log('App rendering');
+
+    const [collapsed, setCollapsed] = useState<boolean>(false);
+    const [switchOn, setSwitchOn] = useState<boolean>(false);
+    const [ratingValue, setRatingValue] = useState<RatingValueType>(0);
+
+
 
     return (
         <>
@@ -28,10 +27,13 @@ function App() {
             {/*<AccordionWithDestructureProps2 title={'Destructure props'}/>*/}
             {/*<OnOff switch={true}/>*/}
             {/*<OnOff switch={false}/>*/}
-            <UncontrolledOnOff/>
-            <UncontrolledOnOff/>
-            <UncontrolledRating/>
-            <UncontrolledAccordion title={'React kabzda lessons list'}/>
+            {/*<UncontrolledOnOff/>*/}
+            {/*<UncontrolledOnOff/>*/}
+            {/*<UncontrolledRating/>*/}
+            {/*<UncontrolledAccordion title={'React kabzda lessons list'}/>*/}
+            <ControlledAccordion title={'React kabzda'} collapsed={collapsed} setCollapsed={setCollapsed}/>
+            <ControlledOnOff switchOn={switchOn} setSwitchOn={setSwitchOn}/>
+            <ControlledRating ratingValue={ratingValue} setRatingValue={setRatingValue}/>
         </>
     );
 }
