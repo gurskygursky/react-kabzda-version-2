@@ -1,6 +1,6 @@
 import React from "react";
 import {storiesOf} from "@storybook/react";
-import { OnOff } from "src/components/on-off/OnOff";
+import { OnOff } from "../components/on-off/OnOff";
 
 storiesOf("OnOff", module)
     .add("this story OnOff on",
